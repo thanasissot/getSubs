@@ -4,7 +4,7 @@ I am automating downloading subs with vlc using kubuntu(ubuntu is the same).
 This is just a noobish way of doing it and i will refactor it a later date using OPENSUBTITLES API
 Currently i work with os, subprocess, time and pyautogui
 to open each file and click on the correct tabs and butttons to download the subs for each item in a folder
-This method will not work everytime, some glitches may occur due to slow interent or systems response
+This method will not work everytime, some glitches may occur due to slow network or systems response
 That's why if one decides to use it you can change the time.wait() values or add pyautogui.PAUSE = 1 (or more)
 to have more control over the application
 
