@@ -32,18 +32,18 @@ def main():
 			coords = []
 			subprocess.run(['xdg-open', alist[0]])
 			time.sleep(1)
-			buttons = ('View', 'VLsub', 'Search by hash', 
+			buttons = ('View (and click it after Done)', 'VLsub (and click it after Done)', 'Search by hash', 
 					  'Point the first item on the subtitles list', 
 					  'Download Selection', 
 					  'X(close button, top corner)')
 
 			for button in buttons:
 				print('Point at', button)
-				time.sleep(2)
+				time.sleep(2.1)
 				mousePos = pyautogui.position()
 				print('Done')
 				coords.append((mousePos.x, mousePos.y))
-				time.sleep(1)
+				time.sleep(1.1)
 
 
 			print('Closing the current file...')
@@ -58,7 +58,7 @@ def main():
 				subprocess.run(['xdg-open', avi])
 				# time.sleep(1)
 				for pos in coords:
-					time.sleep(1.2)
+					time.sleep(1.3)
 					x, y = pos
 					pyautogui.click(x, y)
 
